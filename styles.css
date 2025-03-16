@@ -1,0 +1,43 @@
+.gridContainer{
+    display: grid;
+    grid-template-rows: 30% 40% 30%; /* First row for header, second for images */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    height: 100vh;
+    width: 100vw;
+    background-color:coral;
+}
+
+.header{
+    grid-column: span 2; /* Make header span across both columns */
+    background-color:sienna;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 20px;
+}
+
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    color:white;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    align-items: center;
+}
+
+.btn{
+    margin-top: 100px;
+    height: 50px;
+    width: 200px;
+    background-color: sienna;
+    color: white;
+    font-size: 25px;
+    border-radius: 5%;
+}
